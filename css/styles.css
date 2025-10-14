@@ -253,7 +253,6 @@ body {
 
 /* #region benefits*/
 
-/* #endregion */
 .benefits-list-item.odd {
   display: flex;
   justify-content: center;
@@ -302,19 +301,89 @@ body {
 
 .benefits-table-item.even {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .table-icon {
+  padding: 12px 10px;
   margin-right: 30px;
+  border: 2.92px solid #fff;
+  border-radius: 14px;
+}
+.table-icon.yellow {
+  background-color: #ff9900;
+}
+
+.table-icon.red {
+  background-color: #f03e3d;
+}
+
+.table-icon.blue {
+  background-color: #4d8dff;
 }
 
 .benefits-table-description {
   line-height: 1.63;
   margin-bottom: 25px;
 }
-/* #region */
+
+/* #endregion */
+
+/* #region staff*/
+.staff-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.staff-description {
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 542px;
+  margin-bottom: 64px;
+}
+
+.staff-list {
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 91px;
+}
+
+.staff-list-item {
+  width: calc((100% - 91px) / 2);
+  display: flex;
+  align-items: center;
+}
+
+.staff-list-item.reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.staff-img {
+  margin-right: 20px;
+}
+
+.staff-img-reverve {
+  margin-left: 20px;
+}
+
+.staff-skill {
+  padding: 14px 20px;
+  border-radius: 15px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  width: 281px;
+}
 /* #endregion */
 
 /* #region */
