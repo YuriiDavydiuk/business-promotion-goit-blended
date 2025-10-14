@@ -28,10 +28,11 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header">
         <nav class="header-nav">
           <!-- left: logo-->
-          <a class="header--footer-logo" href="./index.html"
+
+          <a class="header-logo" href="./index.html"
             ><svg class="header-footer-icon" width="40" height="36">
               <use href="./img/icons.svg#icon-header-logo"></use>
             </svg>
@@ -40,22 +41,22 @@
 
           <!-- center: header menu -->
           <ul class="header-menu">
-            <li class="header-menu-item item">
+            <li class="header-menu-link item">
               <a href="./index.html">Product</a>
             </li>
-            <li class="header-menu-item"><a href="">Pricing</a></li>
-            <li class="header-menu-item"><a href="">Customers</a></li>
-            <li class="header-menu-item"><a href="">Resources</a></li>
+            <li class="header-menu-link"><a href="">Pricing</a></li>
+            <li class="header-menu-link"><a href="">Customers</a></li>
+            <li class="header-menu-link"><a href="">Resources</a></li>
           </ul>
         </nav>
 
         <!-- right: button -->
         <ul class="header-menu-btn">
-          <li class="header-menu-btn-left">
-            <button type="button">Sign In</button>
+          <li>
+            <button class="header-menu-btn-left" type="button">Sign In</button>
           </li>
-          <li class="header-menu-btn-right">
-            <button type="button">Sign Up</button>
+          <li>
+            <button class="header-menu-btn-right" type="button">Sign Up</button>
           </li>
         </ul>
       </div>
@@ -63,23 +64,27 @@
 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero">
           <!-- left side -->
-          <h1 class="hero-title">Work at the speed of thought</h1>
-          <p class="hero-description">
-            Tools, tutorials, design and innovation experts, all in one place!
-            The most intuitive way to imagine your next user experience.
-          </p>
-          <a class="hero-link" href="#">Get started</a>
-          <svg class="hero-icon" width="20" height="18.02">
-            <use href="./img/icons.svg#icon-hero-triangle"></use>
-          </svg>
-          <button class="hero-btn btn" type="button">Watch the video</button>
+          <div class="left-side">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-description">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <a class="hero-link" href="#">Get started</a>
+            <svg class="hero-icon" width="20" height="18.02">
+              <use href="./img/icons.svg#icon-hero-triangle"></use>
+            </svg>
+            <button class="hero-btn" type="button">Watch the video</button>
+          </div>
 
-          <!-- right side -->
-          <svg class="hero-img" widht="610" height="555">
-            <use href="./img/icons.svg#icon-hero-img"></use>
-          </svg>
+          <div class="right-side">
+            <!-- right side -->
+            <svg class="hero-img" widht="610" height="555">
+              <use href="./img/icons.svg#icon-hero-img"></use>
+            </svg>
+          </div>
         </div>
       </section>
 
@@ -134,73 +139,76 @@
 
           <!-- first-card -->
           <ul class="benefits-list">
-            <li class="benefits-list-item">
-              <p class="benefits-list-exp">Effortless Validation for</p>
-              <h3 class="benefits-list-title">Management</h3>
-              <p class="benefits-list-description">
-                The Myspace page defines the individual, his or her
-                characteristics, traits, personal choices and the overall
-                personality of the person.
-              </p>
+            <li class="benefits-list-item odd">
+              <div class="benefits-info">
+                <p class="benefits-list-exp">Effortless Validation for</p>
+                <h3 class="benefits-list-title">Management</h3>
+                <p class="benefits-list-description">
+                  The Myspace page defines the individual, his or her
+                  characteristics, traits, personal choices and the overall
+                  personality of the person.
+                </p>
 
-              <ul class="benefits-table">
-                <li class="benefits-table-item">
-                  <h4 class="benefits-table-title">Accessory makers</h4>
-                  <p class="benefits-table-description">
-                    While most people enjoy casino gambling, sports betting,
-                    lottery and bingo playing for the fun
-                  </p>
-                </li>
-                <li>
-                  <h4 class="benefits-table-title">Alterationists</h4>
-                  <p class="benefits-table-description">
-                    If you are looking for a new way to promote your business
-                    that won’t cost you more money
-                  </p>
-                </li>
-              </ul>
-
+                <ul class="benefits-table">
+                  <li class="benefits-table-item">
+                    <h4 class="benefits-table-title">Accessory makers</h4>
+                    <p class="benefits-table-description">
+                      While most people enjoy casino gambling, sports betting,
+                      lottery and bingo playing for the fun
+                    </p>
+                  </li>
+                  <li>
+                    <h4 class="benefits-table-title">Alterationists</h4>
+                    <p class="benefits-table-description">
+                      If you are looking for a new way to promote your business
+                      that won’t cost you more money
+                    </p>
+                  </li>
+                </ul>
+              </div>
               <svg class="benefits-icon" width="540" height="500">
                 <use href="./img/icons.svg#icon-management-img"></use>
               </svg>
             </li>
 
-            <li class="benefits-list-item">
+            <li class="benefits-list-item even">
               <!-- second-card -->
-              <p class="benefits-list-exp">Easier decision making for</p>
-              <h3 class="benefits-list-title">Customer Support</h3>
-              <p class="benefits-list-description">
-                The Myspace page defines the individual, his or her
-                characteristics, traits, personal choices and the overall
-                personality of the person.
-              </p>
+              <div class="benefits-info">
+                <p class="benefits-list-exp">Easier decision making for</p>
+                <h3 class="benefits-list-title">Customer Support</h3>
+                <p class="benefits-list-description">
+                  The Myspace page defines the individual, his or her
+                  characteristics, traits, personal choices and the overall
+                  personality of the person.
+                </p>
 
-              <ul class="benefits-table">
-                <li class="benefits-table-item">
-                  <svg class="table-icon" width="35.07" height="35">
-                    <use href="./img/icon1.svg#icon-icon-yellow"></use>
-                  </svg>
-                  <p class="benefits-table-description"></p>
-                  <p>Never worry about overpaying for your energy again.</p>
-                </li>
-                <li>
-                  <svg class="table-icon" width="35.07" height="35">
-                    <use href="./img/icon1.svg#icon-icon-blue"></use>
-                  </svg>
-                  <p class="benefits-table-description">
-                    We will only switch you to energy companies that we trust
-                    and will treat you right
-                  </p>
-                </li>
-                <li>
-                  <svg class="table-icon" width="35.07" height="35">
-                    <use href="./img/icon1.svg#icon-icon-red"></use>
-                  </svg>
-                  <p class="benefits-table-description">
-                    We track the markets daily and know where the savings are
-                  </p>
-                </li>
-              </ul>
+                <ul class="benefits-table">
+                  <li class="benefits-table-item even">
+                    <svg class="table-icon" width="35.07" height="35">
+                      <use href="./img/icon1.svg#icon-icon-yellow"></use>
+                    </svg>
+                    <p class="benefits-table-description"></p>
+                    <p>Never worry about overpaying for your energy again.</p>
+                  </li>
+                  <li class="benefits-table-item even">
+                    <svg class="table-icon" width="35.07" height="35">
+                      <use href="./img/icon1.svg#icon-icon-blue"></use>
+                    </svg>
+                    <p class="benefits-table-description">
+                      We will only switch you to energy companies that we trust
+                      and will treat you right
+                    </p>
+                  </li>
+                  <li class="benefits-table-item even">
+                    <svg class="table-icon" width="35.07" height="35">
+                      <use href="./img/icon1.svg#icon-icon-red"></use>
+                    </svg>
+                    <p class="benefits-table-description">
+                      We track the markets daily and know where the savings are
+                    </p>
+                  </li>
+                </ul>
+              </div>
 
               <svg class="benefits-icon" width="540" height="500">
                 <use href="./img/icons.svg#icon-support-img"></use>
@@ -208,32 +216,33 @@
             </li>
 
             <!-- third-card-left-side -->
-            <li class="benefits-list-item">
-              <p class="benefits-list-exp">Optimisation for</p>
-              <h3 class="benefits-list-title">Collaborative</h3>
-              <p class="benefits-list-description">
-                Few would argue that, despite the advancements of feminism over
-                the past three decades, women still face a double standard when
-                it comes to their behavior.
-              </p>
+            <li class="benefits-list-item odd">
+              <div class="benefits-info">
+                <p class="benefits-list-exp">Optimisation for</p>
+                <h3 class="benefits-list-title">Collaborative</h3>
+                <p class="benefits-list-description">
+                  Few would argue that, despite the advancements of feminism
+                  over the past three decades, women still face a double
+                  standard when it comes to their behavior.
+                </p>
 
-              <ul class="benefits-table">
-                <li class="benefits-table-item">
-                  <h4 class="benefits-table-title">Accessory makers</h4>
-                  <p class="benefits-table-description">
-                    While most people enjoy casino gambling, sports betting,
-                    lottery and bingo playing for the fun
-                  </p>
-                </li>
-                <li class="benefits-table-item">
-                  <h4 class="benefits-table-title">Alterationists</h4>
-                  <p class="benefits-table-description">
-                    If you are looking for a new way to promote your business
-                    that won’t cost you more money
-                  </p>
-                </li>
-              </ul>
-
+                <ul class="benefits-table">
+                  <li class="benefits-table-item">
+                    <h4 class="benefits-table-title">Accessory makers</h4>
+                    <p class="benefits-table-description">
+                      While most people enjoy casino gambling, sports betting,
+                      lottery and bingo playing for the fun
+                    </p>
+                  </li>
+                  <li class="benefits-table-item">
+                    <h4 class="benefits-table-title">Alterationists</h4>
+                    <p class="benefits-table-description">
+                      If you are looking for a new way to promote your business
+                      that won’t cost you more money
+                    </p>
+                  </li>
+                </ul>
+              </div>
               <!-- third-card-right-side -->
               <svg class="benefits-icon" width="540" height="500">
                 <use href="./img/icons.svg#icon-collaboration-img"></use>
