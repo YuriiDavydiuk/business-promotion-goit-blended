@@ -52,90 +52,97 @@ body {
 /* #endregion */
 
 /* #region common */
-.header-footer-logo {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 0.93;
-  color: #173a56;
-}
-
-.header-footer-icon {
-  margin-right: 4px;
-}
 
 .container {
-  width: 1110px;
-  padding: 0 15px 0 15px;
+  width: 1150px;
+  padding: 0 20px 0 20px;
   margin: 0 auto;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.main-btn {
+  display: block;
+  min-width: 110px;
+  padding: 14px 25px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  line-height: 1.5;
+  background-color: #02897a;
+
+  font-weight: 600;
+  color: #fff;
 }
 /* #endregion */
 
 /* #region header */
 
-.container.header {
+.page-header {
+  padding: 19px 0;
+}
+
+.header-container,
+.header-nav,
+.header-logo,
+.header-nav-list,
+.header-auth-list {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
 }
 
 .header-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
 }
 
 .header-logo {
+  gap: 16px;
+  margin-right: auto;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 0.93;
   color: #173a56;
-  margin-right: 237px;
 }
 
-.header-menu {
-  display: flex;
-  gap: 20px;
+.header-nav-list {
+  gap: 30px;
 }
 
-.header-menu-link {
+.header-nav-link {
+  display: block;
   line-height: 1.75;
-  padding: 26px 0;
+  padding: 7px 0;
 }
 
-.header-menu-link.item {
+.header-nav-link.current {
   font-weight: 600;
-  padding: 26px 0;
 }
 
-.header-menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 21px;
+.header-nav-link:not(.current):hover,
+.header-nav-link:not(.current):focus {
+  color: teal;
+  transform: scale(1.1);
+}
+.header-auth-list {
+  gap: 24px;
+  margin-left: 73px;
 }
 
-.header-menu-btn-left {
-  font-weight: 600;
-  text-align: center;
-  color: #173a56;
+.header-auth-btn.main-btn {
+  padding: 9px 0;
+  transition: background-color 250ms ease-in, color 250ms ease-in,
+    border-color 250ms ease-in;
+}
+
+.header-auth-btn.main-btn:hover,
+.header-auth-btn.main-btn:focus {
   background-color: #fff;
-  text-align: center;
-  padding: 9px 25px;
-  width: 113px;
-  border-radius: 4px;
-  border: 1px solid #bcd0e5;
+  color: #173a56;
+  border-color: #173a56;
 }
 
-.header-menu-btn-right {
-  font-weight: 600;
-  padding: 9px 25px;
-  color: #fff;
-  text-align: center;
-  background-color: #02897a;
-  width: 113px;
-  border-radius: 4px;
-}
 /* #endregion */
 
 /* #region hero */

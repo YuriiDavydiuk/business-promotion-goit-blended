@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
 
+    <!-- Preconnect для шрифтів -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -23,47 +24,54 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Основний стиль -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="container header">
+    <header class="page-header">
+      <div class="container header-container">
         <nav class="header-nav">
-          <!-- left: logo-->
-
           <a class="header-logo" href="./index.html"
-            ><svg class="header-footer-icon" width="40" height="36">
+            ><svg class="header-icon" width="40" height="36">
               <use href="./img/icons.svg#icon-header-logo"></use>
             </svg>
             Product
           </a>
 
-          <!-- center: header menu -->
-          <ul class="header-menu">
-            <li class="header-menu-link item">
-              <a href="./index.html">Product</a>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link current" href="./index.html">Product</a>
             </li>
-            <li class="header-menu-link"><a href="">Pricing</a></li>
-            <li class="header-menu-link"><a href="">Customers</a></li>
-            <li class="header-menu-link"><a href="">Resources</a></li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Pricing</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Customers</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Resources</a>
+            </li>
           </ul>
         </nav>
 
-        <!-- right: button -->
-        <ul class="header-menu-btn">
-          <li>
-            <button class="header-menu-btn-left" type="button">Sign In</button>
+        <ul class="header-auth-list">
+          <li class="header-auth-item">
+            <button class="header-auth-btn main-btn" type="button">
+              Sign In
+            </button>
           </li>
-          <li>
-            <button class="header-menu-btn-right" type="button">Sign Up</button>
+          <li class="header-auth-item">
+            <button class="header-auth-btn main-btn" type="button">
+              Sign Up
+            </button>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container hero">
           <!-- left side -->
           <div class="left-side">
