@@ -71,24 +71,31 @@
     </header>
 
     <main>
-      <section class="hero section">
-        <div class="container hero">
+      <section class="hero">
+        <div class="hero container">
           <!-- left side -->
-          <div class="left-side">
+          <div class="hero-left-side">
             <h1 class="hero-title">Work at the speed of thought</h1>
             <p class="hero-description">
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <a class="hero-link" href="#price">Get started</a>
-            <svg class="hero-icon" width="20" height="18.02">
-              <use href="./img/icons.svg#icon-hero-triangle"></use>
-            </svg>
-            <button class="hero-btn" type="button">Watch the video</button>
+            <div class="hero-link">
+              <a class="hero-link-item" href="#price">Get started</a>
+              <a
+                class="hero-link-wrapper"
+                href="https://www.youtube.com/watch?v=UqVSNblvoQM"
+                target="_blank"
+                ><svg class="hero-icon" width="20" height="18.02">
+                  <use href="./img/icons.svg#icon-hero-triangle"></use>
+                </svg>
+                Watch the video</a
+              >
+            </div>
           </div>
 
+          <!-- right side -->
           <div class="right-side">
-            <!-- right side -->
             <svg class="hero-img" widht="610" height="555">
               <use href="./img/icons.svg#icon-hero-img"></use>
             </svg>
@@ -101,7 +108,7 @@
           <h2 class="feature-title">Product was Built Specifically for You</h2>
           <ul class="feature-list">
             <li class="feature-list-item">
-              <svg class="feature-list-icon" width="54" height="54">
+              <svg class="feature-list-icon" width="12" height="12">
                 <use href="./img/icons.svg#icon-product-icon-1"></use>
               </svg>
               <h3 class="feature-list-title">First click tests</h3>
@@ -110,7 +117,7 @@
               </p>
             </li>
             <li class="feature-list-item">
-              <svg class="feature-list-icon" width="54" height="54">
+              <svg class="feature-list-icon" width="12" height="12">
                 <use href="./img/icons.svg#icon-product-icon-2"></use>
               </svg>
               <h3 class="feature-list-title">Design surveys</h3>
@@ -119,7 +126,7 @@
               </p>
             </li>
             <li class="feature-list-item">
-              <svg class="feature-list-icon" width="54" height="54">
+              <svg class="feature-list-icon" width="12" height="12">
                 <use href="./img/icons.svg#icon-product-icon-3"></use>
               </svg>
               <h3 class="feature-list-title">Preference tests</h3>
@@ -128,7 +135,7 @@
               </p>
             </li>
             <li class="feature-list-item">
-              <svg class="feature-list-icon" width="54" height="54">
+              <svg class="feature-list-icon" width="12" height="12">
                 <use href="./img/icons.svg#icon-product-icon-4"></use>
               </svg>
               <h3 class="feature-list-title">Five second tests</h3>
